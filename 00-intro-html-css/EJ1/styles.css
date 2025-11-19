@@ -1,0 +1,98 @@
+/* Colores de referencia:
+   Fondo general: #0f172a
+   Contenedor/Card: #1e293b
+   Texto secundario: #94a3b8
+   Borde del input: #334155
+   Botón Sign In: #3b82f6
+*/
+
+/* --- Estilos Generales y Fondo --- */
+body {
+  background-color: #0f172a;
+  font-family: sans-serif; /* Usamos una fuente simple */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+
+}
+
+/* --- Contenedor Principal (Login Card) --- */
+.login-container {
+  background-color: #1e293b;
+  padding: 40px;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); Sombra suave para destacar */
+  width: 350px; /* Ancho fijo para la tarjeta */
+  border: 1px solid #334155
+}
+
+/* --- Títulos y Texto --- */
+header {
+  /* text-align: left; */
+  margin-bottom: 30px;
+  color: white; /* El texto principal es blanco/claro */
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #94a3b8; /* Color para el texto secundario */
+  font-size: 0.9em;
+}
+
+/* --- Formulario e Inputs --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+input[type="email"], 
+input[type="password"] {
+  background-color: #1e293b; /* Mismo fondo que el contenedor */
+  color: white;
+  padding: 15px 10px;
+  border: 1px solid #334155; /* Borde oscuro */
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+input::placeholder {
+  color: #94a3b8; /* Color para el texto placeholder */
+}
+
+/* --- Botones --- */
+button {
+  padding: 15px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 0.2s; /* Transición para un mejor efecto hover */
+}
+
+.sign-in-button {
+  background-color: #3b82f6; /* Color azul primario */
+  color: white;
+}
+
+.sign-in-button:hover {
+  background-color: #3470e0; /* Un azul ligeramente más oscuro al pasar el mouse */
+}
+
+.create-account-button {
+  background-color: transparent; /* Fondo transparente para el botón secundario */
+  color: #94a3b8; /* Color de texto secundario */
+  border: 1px solid #1e293b; /* Borde invisible o muy tenue */
+  margin-top: 5px;
+}
+
+.create-account-button:hover {
+  color: white; /* Texto blanco al pasar el mouse */
+}
